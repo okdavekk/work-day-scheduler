@@ -15,9 +15,7 @@ var addTimeColor = moment().startOf('hour').fromNow();
 //Current day display write to HTML
 $("#currentDay").html(currentDate);
 
-//THESE DONT WORK!!!
-//THESE DONT WORK!!!
-//THESE DONT WORK!!!
+
 //Row color change for time past... Goes to red when its past
 if (currentTime > 9){
     $("#0900-row").css("color", "red");
@@ -58,9 +56,7 @@ if (currentTime > 17){
 }
 
 
-//THESE DONT WORK!!!
-//THESE DONT WORK!!!
-//THESE DONT WORK!!!
+
 //Row color change for time to come... Goes to green when its in the future
 if (currentTime < "9"){
     $("#0900-row").css("color", "green");
@@ -86,7 +82,6 @@ if (currentTime < 14){
     $("#1400-row").css("color", "green");
 }
 
-
 if (currentTime < 15){
     $("#1500-row").css("color", "green");
 }
@@ -101,12 +96,47 @@ if (currentTime < 17){
 }
 
 
-// $("0900-save-button").click(function(){
-//     alert(something);
-// });
 
 
+//Click events
 $("#0900-save-button").on("click", function() {
+    alert("hi");
+});
+
+$("#1000-save-button").on("click", function() {
+    alert("hi");
+});
+
+
+$("#1100-save-button").on("click", function() {
+    alert("hi");
+});
+
+$("#1200-save-button").on("click", function() {
+    alert("hi");
+});
+
+
+$("#1300-save-button").on("click", function() {
+    alert("hi");
+});
+
+
+$("#1400-save-button").on("click", function() {
+    alert("hi");
+});
+
+
+$("#1500-save-button").on("click", function() {
+    alert("hi");
+});
+
+
+$("#1600-save-button").on("click", function() {
+    alert("hi");
+});
+
+$("#1700-save-button").on("click", function() {
     alert("hi");
 });
 
@@ -114,6 +144,7 @@ $("#0900-save-button").on("click", function() {
 
 
 
-// shoppingListEl.on("click", ".delete-item-btn", removeItem);
 
-// shoppingFormEl.on('submit', handleFormSubmit);
+
+
+
