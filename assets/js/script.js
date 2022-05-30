@@ -2,7 +2,7 @@
 //Current day display variables
 var currentDayEl = $("currentDay")
 var currentDate = moment().format("DD MMMM YYYY")
-var currentTime = moment().format("HH")
+var currentTime = moment().format("H:mm:ss")
 
 console.log(currentTime);
 
@@ -20,7 +20,7 @@ $("#currentDay").html(currentDate);
 //REFACTOR
 //REFACTOR
 //Row color change for time past... Goes to white when its past
-if (currentTime > 09) {
+if (currentTime > 0959) {
     $("#0900-row").css("background-color", "#d3d3d3");
 }
 
