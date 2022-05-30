@@ -2,7 +2,7 @@
 //Current day display variables
 var currentDayEl = $("currentDay")
 var currentDate = moment().format("DD MMMM YYYY")
-var currentTime = moment().format("H:mm:ss")
+var currentTime = moment().format("HH:mm:ss")
 
 console.log(currentTime);
 
@@ -20,41 +20,39 @@ $("#currentDay").html(currentDate);
 //REFACTOR
 //REFACTOR
 //Row color change for time past... Goes to white when its past
-if (currentTime > 0959) {
+if (currentTime > "9") {
     $("#0900-row").css("background-color", "#d3d3d3");
 }
 
-if (currentTime > 10) {
+if (currentTime > "10") {
     $("#1000-row").css("background-color", "#d3d3d3");
 }
 
-if (currentTime > 11) {
+if (currentTime > "11") {
     $("#1100-row").css("background-color", "#d3d3d3");
 }
 
-if (currentTime > 12) {
+if (currentTime > "12") {
     $("#1200-row").css("background-color", "#d3d3d3");
 }
 
-if (currentTime > 13) {
+if (currentTime > "13") {
     $("#1300-row").css("background-color", "#d3d3d3");
 }
 
-if (currentTime > 14) {
+if (currentTime > "14") {
     $("#1400-row").css("background-color", "#d3d3d3");
 }
 
-
-if (currentTime > 15) {
+if (currentTime > "15") {
     $("#1500-row").css("background-color", "#d3d3d3");
 }
 
-
-if (currentTime > 16) {
+if (currentTime > "16") {
     $("#1600-row").css("background-color", "#d3d3d3");
 }
 
-if (currentTime > 17) {
+if (currentTime > "17") {
     $("#1700-row").css("background-color", "#d3d3d3");
 }
 
@@ -63,41 +61,39 @@ if (currentTime > 17) {
 //REFACTOR
 //REFACTOR
 //Row color change for time past... Goes to red when its the present time
-if (currentTime == 09) {
+if (currentTime == "9") {
     $("#0900-row").css("background-color", "#ff6961");
 }
  
-if (currentTime == 10) {
+if (currentTime == "10") {
     $("#1000-row").css("background-color", "#ff6961");
 }
 
-if (currentTime == 11) {
+if (currentTime == "11") {
     $("#1100-row").css("background-color", "#ff6961");
 }
 
-if (currentTime == 12) {
+if (currentTime == "12") {
     $("#1200-row").css("background-color", "#ff6961");
 }
 
-if (currentTime == 13) {
+if (currentTime == "13") {
     $("#1300-row").css("background-color", "#ff6961");
 }
 
-if (currentTime == 14) {
+if (currentTime == "14") {
     $("#1400-row").css("background-color", "#ff6961");
 }
 
-
-if (currentTime == 15) {
+if (currentTime == "15") {
     $("#1500-row").css("background-color", "#ff6961");
 }
 
-
-if (currentTime == 16) {
+if (currentTime == "16") {
     $("#1600-row").css("background-color", "#ff6961");
 }
 
-if (currentTime == 17) {
+if (currentTime == "17") {
     $("#1700-row").css("background-color", "#ff6961");
 }
 
@@ -110,35 +106,35 @@ if (currentTime < 09) {
     $("#0900-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 10) {
+if (currentTime < "10") {
     $("#1000-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 11) { 
+if (currentTime < "11") { 
     $("#1100-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 12) {
+if (currentTime < "12") {
     $("#1200-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 13) {
+if (currentTime < "13") {
     $("#1300-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 14) {
+if (currentTime < "14") {
     $("#1400-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 15) {
+if (currentTime < "15") {
     $("#1500-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 16) {
+if (currentTime < "16") {
     $("#1600-row").css("background-color", "#77dd77");
 }
 
-if (currentTime < 17) {
+if (currentTime < "17") {
     $("#1700-row").css("background-color", "#77dd77");
 }
 
