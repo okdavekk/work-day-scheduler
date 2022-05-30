@@ -20,41 +20,41 @@ $("#currentDay").html(currentDate);
 //THESE DONT WORK!!!
 //Row color change for time past... Goes to red when its past
 if (currentTime > 9){
-    $("0900-row").css("color", "red");
+    $("#0900-row").css("color", "red");
 }
 
 if (currentTime > 10){
-    $("1000-row").css("color", "red");
+    $("#1000-row").css("color", "red");
 }
 
 if (currentTime > 11){
-    $("1100-row").css("color", "red");
+    $("#1100-row").css("color", "red");
 }
 
 if (currentTime > 12){
-    $("1200-row").css("color", "red");
+    $("#1200-row").css("color", "red");
 }
 
 if (currentTime > 13){
-    $("1300-row").css("color", "red");
+    $("#1300-row").css("color", "red");
 }
 
 if (currentTime > 14){
-    $("1400-row").css("color", "red");
+    $("#1400-row").css("color", "red");
 }
 
 
 if (currentTime > 15){
-    $("1500-row").css("color", "red");
+    $("#1500-row").css("color", "red");
 }
 
 
 if (currentTime > 16){
-    $("1600-row").css("color", "red");
+    $("#1600-row").css("color", "red");
 }
 
 if (currentTime > 17){
-    $("1700-row").css("color", "red");
+    $("#1700-row").css("color", "red");
 }
 
 
@@ -62,45 +62,58 @@ if (currentTime > 17){
 //THESE DONT WORK!!!
 //THESE DONT WORK!!!
 //Row color change for time to come... Goes to green when its in the future
-if (currentTime < 9){
-    $("0900-row").css("color", "green");
+if (currentTime < "9"){
+    $("#0900-row").css("color", "green");
 }
 
 if (currentTime < 10){
-    $("1000-row").css("color", "green");
+    $("#1000-row").css("color", "green");
 }
 
 if (currentTime < 11){
-    $("1100-row").css("color", "green");
+    $("#1100-row").css("color", "green");
 }
 
 if (currentTime < 12){
-    $("1200-row").css("color", "green");
+    $("#1200-row").css("color", "green");
 }
 
 if (currentTime < 13){
-    $("1300-row").css("color", "green");
+    $("#1300-row").css("color", "green");
 }
 
 if (currentTime < 14){
-    $("1400-row").css("color", "green");
+    $("#1400-row").css("color", "green");
 }
 
 
 if (currentTime < 15){
-    $("1500-row").css("color", "green");
+    $("#1500-row").css("color", "green");
 }
 
 
 if (currentTime < 16){
-    $("1600-row").css("color", "green");
+    $("#1600-row").css("color", "green");
 }
 
 if (currentTime < 17){
-    $("1700-row").css("color", "green");
+    $("#1700-row").css("color", "green");
 }
 
 
+// $("0900-save-button").click(function(){
+//     alert(something);
+// });
 
 
-console.log(currentTime);
+$("#0900-save-button").on("click", function() {
+    alert("hi");
+});
+
+
+
+
+
+// shoppingListEl.on("click", ".delete-item-btn", removeItem);
+
+// shoppingFormEl.on('submit', handleFormSubmit);
