@@ -11,7 +11,6 @@ $("#currentDay").html(currentDate);
 
 //Row color change... Goes to grey when its past, green in the future and red in the present.
 //d3 = grey, 77 = green, 61 = red, 
-
 if (currentTime > "09:59:59") {
     //grey
     $("#0900-row").css("background-color", "#d3d3d3");
@@ -94,12 +93,10 @@ $("#0900-save-button").on("click", function () {
     localStorage.setItem("0900", nineTextBox);
 });
 
-
 $("#1000-save-button").on("click", function () {
     var tenTextBox = $("textarea#1000-text-area").val();
     localStorage.setItem("1000", tenTextBox);
 });
-
 
 $("#1100-save-button").on("click", function () {
     var elevenTextBox = $("textarea#1100-text-area").val();
@@ -111,24 +108,20 @@ $("#1200-save-button").on("click", function () {
     localStorage.setItem("1200", twelveTextBox);
 });
 
-
 $("#1300-save-button").on("click", function () {
     var thirteenTextBox = $("textarea#1300-text-area").val();
     localStorage.setItem("1300", thirteenTextBox);
 });
-
 
 $("#1400-save-button").on("click", function () {
     var fourteenTextBox = $("textarea#1400-text-area").val();
     localStorage.setItem("1400", fourteenTextBox);
 });
 
-
 $("#1500-save-button").on("click", function () {
     var fifteenTextBox = $("textarea#1500-text-area").val();
     localStorage.setItem("1500", fifteenTextBox);
 });
-
 
 $("#1600-save-button").on("click", function () {
     var sixteenTextBox = $("textarea#1600-text-area").val();
@@ -138,12 +131,38 @@ $("#1600-save-button").on("click", function () {
 $("#1700-save-button").on("click", function () {
     var seventeenTextBox = $("textarea#1700-text-area").val();
     localStorage.setItem("1700", seventeenTextBox);
+    
 });
 
 
+//Pull from local storage and display in text area
+function getItemsFromStorage() {
+    var nineDisplay = localStorage.getItem("0900");
+    $("textarea#0900-text-area").html(nineDisplay);
 
+    var tenDisplay = localStorage.getItem("1000");
+    $("textarea#1000-text-area").html(tenDisplay);
 
+    var elevenDisplay = localStorage.getItem("1100");
+    $("textarea#1100-text-area").html(elevenDisplay);
 
+    var twelveDisplay = localStorage.getItem("1200");
+    $("textarea#1200-text-area").html(twelveDisplay);
 
+    var thirteenDisplay = localStorage.getItem("1300");
+    $("textarea#1300-text-area").html(thirteenDisplay);
 
+    var fourteenDisplay = localStorage.getItem("1400");
+    $("textarea#1400-text-area").html(fourteenDisplay);
 
+    var fifteenDisplay = localStorage.getItem("1500");
+    $("textarea#1500-text-area").html(fifteenDisplay);
+
+    var sixteenDisplay = localStorage.getItem("1600");
+    $("textarea#1600-text-area").html(sixteenDisplay);
+    
+    var seventeenDisplay = localStorage.getItem("1700");
+    $("textarea#1700-text-area").html(seventeenDisplay);    
+}
+
+getItemsFromStorage();
