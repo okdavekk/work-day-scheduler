@@ -4,7 +4,7 @@ var currentDayEl = $("currentDay")
 var currentDate = moment().format("DD MMMM YYYY")
 var currentTime = moment().format("HH")
 
-
+console.log(currentTime);
 
 // //Variables to change colors of row if in the past or present time
 // var deductTimeColor = moment().startOf("hour").fromNow();
@@ -26,7 +26,7 @@ $("#currentDay").html(currentDate);
 //REFACTOR
 //REFACTOR
 //Row color change for time past... Goes to white when its past
-if (currentTime > 9) {
+if (currentTime > 09) {
     $("#0900-row").css("background-color", "#d3d3d3");
 }
 
@@ -65,7 +65,7 @@ if (currentTime > 17) {
 }
 
 // //Row color change for time past... Goes to red when its the present time
-// if (currentTime = 9) {
+// if (currentTime = 09) {
 //     $("#0900-row").css("background-color", "#ff6961");
 // }
 
@@ -108,7 +108,7 @@ if (currentTime > 17) {
 //REFACTOR
 //REFACTOR
 //Row color change for time to come... Goes to green when its in the future
-if (currentTime < 9) {
+if (currentTime < 09) {
     $("#0900-row").css("background-color", "#77dd77");
 }
 
@@ -148,51 +148,56 @@ if (currentTime < 17) {
 
 
 //Click events
-$("#0900-save-button").on("click", function(event) {
-    event.preventDefault()
-
+$("#0900-save-button").on("click", function() {
     var nineTextBox = $("textarea#0900-text-area").val();
-
     console.log(nineTextBox);
 
-    localStorage.setItem("0900", nineTextBox);
+    // localStorage.setItem("0900", nineTextBox);
 });
 
 $("#1000-save-button").on("click", function() {
-    alert("hi");
+    var tenTextBox = $("textarea#1000-text-area").val();
+    console.log(tenTextBox);
 });
 
 
 $("#1100-save-button").on("click", function() {
-    alert("hi");
+    var elevenTextBox = $("textarea#1100-text-area").val();
+    console.log(elevenTextBox);
 });
 
 $("#1200-save-button").on("click", function() {
-    alert("hi");
+    var twelveTextBox = $("textarea#1200-text-area").val();
+    console.log(twelveTextBox);
 });
 
 
 $("#1300-save-button").on("click", function() {
-    alert("hi");
+    var thirteenTextBox = $("textarea#1300-text-area").val();
+    console.log(thirteenTextBox);
 });
 
 
 $("#1400-save-button").on("click", function() {
-    alert("hi");
+    var fourteenTextBox = $("textarea#1400-text-area").val();
+    console.log(fourteenTextBox);
 });
 
 
 $("#1500-save-button").on("click", function() {
-    alert("hi");
+    var fifteenTextBox = $("textarea#1500-text-area").val();
+    console.log(fifteenTextBox);
 });
 
 
 $("#1600-save-button").on("click", function() {
-    alert("hi");
+    var sixteenTextBox = $("textarea#1600-text-area").val();
+    console.log(sixteenTextBox);
 });
 
 $("#1700-save-button").on("click", function() {
-    alert("hi");
+    var seventeenTextBox = $("textarea#1700-text-area").val();
+    console.log(seventeenTextBox);
 });
 
 
