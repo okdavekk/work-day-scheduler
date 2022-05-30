@@ -91,54 +91,53 @@ if (currentTime > "17:59:59") {
 //Click events
 $("#0900-save-button").on("click", function () {
     var nineTextBox = $("textarea#0900-text-area").val();
-    console.log(nineTextBox);
-
-    // localStorage.setItem("0900", nineTextBox);
+    localStorage.setItem("0900", nineTextBox);
 });
+
 
 $("#1000-save-button").on("click", function () {
     var tenTextBox = $("textarea#1000-text-area").val();
-    console.log(tenTextBox);
+    localStorage.setItem("1000", tenTextBox);
 });
 
 
 $("#1100-save-button").on("click", function () {
     var elevenTextBox = $("textarea#1100-text-area").val();
-    console.log(elevenTextBox);
+    localStorage.setItem("1100", elevenTextBox);
 });
 
 $("#1200-save-button").on("click", function () {
     var twelveTextBox = $("textarea#1200-text-area").val();
-    console.log(twelveTextBox);
+    localStorage.setItem("1200", twelveTextBox);
 });
 
 
 $("#1300-save-button").on("click", function () {
     var thirteenTextBox = $("textarea#1300-text-area").val();
-    console.log(thirteenTextBox);
+    localStorage.setItem("1300", thirteenTextBox);
 });
 
 
 $("#1400-save-button").on("click", function () {
     var fourteenTextBox = $("textarea#1400-text-area").val();
-    console.log(fourteenTextBox);
+    localStorage.setItem("1400", fourteenTextBox);
 });
 
 
 $("#1500-save-button").on("click", function () {
     var fifteenTextBox = $("textarea#1500-text-area").val();
-    console.log(fifteenTextBox);
+    localStorage.setItem("1500", fifteenTextBox);
 });
 
 
 $("#1600-save-button").on("click", function () {
     var sixteenTextBox = $("textarea#1600-text-area").val();
-    console.log(sixteenTextBox);
+    localStorage.setItem("1600", sixteenTextBox);
 });
 
 $("#1700-save-button").on("click", function () {
     var seventeenTextBox = $("textarea#1700-text-area").val();
-    console.log(seventeenTextBox);
+    localStorage.setItem("1700", seventeenTextBox);
 });
 
 
