@@ -16,12 +16,6 @@ console.log(currentTime);
 $("#currentDay").html(currentDate);
 
 
-//Text areas
-
-
-
-
-
 //REFACTOR
 //REFACTOR
 //REFACTOR
@@ -64,44 +58,48 @@ if (currentTime > 17) {
     $("#1700-row").css("background-color", "#d3d3d3");
 }
 
-// //Row color change for time past... Goes to red when its the present time
-// if (currentTime = 09) {
-//     $("#0900-row").css("background-color", "#ff6961");
-// }
 
-// if (currentTime = 10) {
-//     $("#1000-row").css("background-color", "#ff6961");
-// }
+//REFACTOR
+//REFACTOR
+//REFACTOR
+//Row color change for time past... Goes to red when its the present time
+if (currentTime == 09) {
+    $("#0900-row").css("background-color", "#ff6961");
+}
+ 
+if (currentTime == 10) {
+    $("#1000-row").css("background-color", "#ff6961");
+}
 
-// if (currentTime = 11) {
-//     $("#1100-row").css("background-color", "#ff6961");
-// }
+if (currentTime == 11) {
+    $("#1100-row").css("background-color", "#ff6961");
+}
 
-// if (currentTime = 12) {
-//     $("#1200-row").css("background-color", "#ff6961");
-// }
+if (currentTime == 12) {
+    $("#1200-row").css("background-color", "#ff6961");
+}
 
-// if (currentTime = 13) {
-//     $("#1300-row").css("background-color", "#ff6961");
-// }
+if (currentTime == 13) {
+    $("#1300-row").css("background-color", "#ff6961");
+}
 
-// if (currentTime = 14) {
-//     $("#1400-row").css("background-color", "#ff6961");
-// }
-
-
-// if (currentTime = 15) {
-//     $("#1500-row").css("background-color", "#ff6961");
-// }
+if (currentTime == 14) {
+    $("#1400-row").css("background-color", "#ff6961");
+}
 
 
-// if (currentTime = 16) {
-//     $("#1600-row").css("background-color", "#ff6961");
-// }
+if (currentTime == 15) {
+    $("#1500-row").css("background-color", "#ff6961");
+}
 
-// if (currentTime = 17) {
-//     $("#1700-row").css("background-color", "#ff6961");
-// }
+
+if (currentTime == 16) {
+    $("#1600-row").css("background-color", "#ff6961");
+}
+
+if (currentTime == 17) {
+    $("#1700-row").css("background-color", "#ff6961");
+}
 
 
 //REFACTOR
@@ -143,7 +141,6 @@ if (currentTime < 16) {
 if (currentTime < 17) {
     $("#1700-row").css("background-color", "#77dd77");
 }
-
 
 
 
@@ -203,7 +200,6 @@ $("#1700-save-button").on("click", function() {
 
 
 
-//Local Storage
 
 
 
