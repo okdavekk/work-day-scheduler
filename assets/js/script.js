@@ -5,7 +5,7 @@ var currentTime = moment().format("HH:mm:ss")
 
 //Current day & time display write to HTML
 $("#currentDay").html("Date: " + currentDate);
-$("#currentTime").html("Current Time: " + currentTime);
+$("#currentTime").html("Time You Landed on the Page: " + currentTime);
 
 //Row color change... Goes to grey when its past, green in the future and red in the present.
 //d3 = grey, 77 = green, 61 = red, 
