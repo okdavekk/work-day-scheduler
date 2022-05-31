@@ -1,6 +1,6 @@
 //Current day display variables
 var currentDayEl = $("currentDay")
-var currentDate = moment().format("DD MMMM YYYY HH:mm:ss")
+var currentDate = moment().format("dddd, DD MMMM YYYY HH:mm:ss")
 var currentTime = moment().format("HH:mm:ss")
 
 //Current day & time display write to HTML
@@ -15,13 +15,13 @@ if (currentTime > "09:59:59") {
 } else if (currentTime < "09") {
     $(".rows").css("background-color", "#77dd77");
     //red
-}  else if (currentTime >= "09" || currentTime <= "09:59:59") {
+} else if (currentTime >= "09" || currentTime <= "09:59:59") {
     $("#0900-row").css("background-color", "#ff6961");
 }
 
 if (currentTime > "10:59:59") {
     $("#1000-row").css("background-color", "#d3d3d3");
-}  else if (currentTime < "10") {
+} else if (currentTime < "10") {
     $("#1000-row").css("background-color", "#77dd77");
 } else if (currentTime >= "10" || currentTime <= "10:59:59") {
     $("#1000-row").css("background-color", "#ff6961");
@@ -29,7 +29,7 @@ if (currentTime > "10:59:59") {
 
 if (currentTime > "11:59:59") {
     $("#1100-row").css("background-color", "#d3d3d3");
-} else if (currentTime < "11" ) {
+} else if (currentTime < "11") {
     $("#1100-row").css("background-color", "#77dd77");
 } else if (currentTime >= "11" || currentTime <= "11:59:59") {
     $("#1100-row").css("background-color", "#ff6961");
@@ -45,7 +45,7 @@ if (currentTime > "12:59:59") {
 
 if (currentTime > "13:59:59") {
     $("#1300-row").css("background-color", "#d3d3d3");
-}  else if (currentTime < "13") {
+} else if (currentTime < "13") {
     $("#1300-row").css("background-color", "#77dd77");
 } else if (currentTime >= "13" || currentTime <= "13:59:59") {
     $("#1300-row").css("background-color", "#ff6961");
@@ -53,7 +53,7 @@ if (currentTime > "13:59:59") {
 
 if (currentTime > "14:59:59") {
     $("#1400-row").css("background-color", "#d3d3d3");
-}  else if (currentTime < "14") {
+} else if (currentTime < "14") {
     $("#1400-row").css("background-color", "#77dd77");
 } else if (currentTime >= "14" || currentTime <= "14:59:59") {
     $("#1400-row").css("background-color", "#ff6961");
@@ -61,7 +61,7 @@ if (currentTime > "14:59:59") {
 
 if (currentTime > "15:59:59") {
     $("#1500-row").css("background-color", "#d3d3d3");
-}  else if (currentTime < "15") {
+} else if (currentTime < "15") {
     $("#1500-row").css("background-color", "#77dd77");
 } else if (currentTime >= "15" || currentTime <= "15:59:59") {
     $("#1500-row").css("background-color", "#ff6961");
@@ -69,7 +69,7 @@ if (currentTime > "15:59:59") {
 
 if (currentTime > "16:59:59") {
     $("#1600-row").css("background-color", "#d3d3d3");
-}  else if (currentTime < "16") {
+} else if (currentTime < "16") {
     $("#1600-row").css("background-color", "#77dd77");
 } else if (currentTime >= "16" || currentTime <= "16:59:59") {
     $("#1600-row").css("background-color", "#ff6961");
@@ -77,7 +77,7 @@ if (currentTime > "16:59:59") {
 
 if (currentTime > "17:59:59") {
     $("#1700-row").css("background-color", "#d3d3d3");
-}  else if (currentTime < "17") {
+} else if (currentTime < "17") {
     $("#1700-row").css("background-color", "#77dd77");
 } else if (currentTime >= "17" || currentTime <= "17:59:59") {
     $("#1700-row").css("background-color", "#ff6961");
@@ -128,7 +128,7 @@ $("#1600-save-button").on("click", function () {
 $("#1700-save-button").on("click", function () {
     var seventeenTextBox = $("textarea#1700-text-area").val();
     localStorage.setItem("1700", seventeenTextBox);
-    
+
 });
 
 
@@ -157,9 +157,9 @@ function getItemsFromStorage() {
 
     var sixteenDisplay = localStorage.getItem("1600");
     $("textarea#1600-text-area").html(sixteenDisplay);
-    
+
     var seventeenDisplay = localStorage.getItem("1700");
-    $("textarea#1700-text-area").html(seventeenDisplay);    
+    $("textarea#1700-text-area").html(seventeenDisplay);
 }
 
 getItemsFromStorage();
