@@ -32,10 +32,10 @@ if (currentTime > "10:59:59") {
 
 if (currentTime > "11:59:59") {
     $("#1100-row").css("background-color", "#d3d3d3");
+} else if (currentTime < "11" ) {
+    $("#1100-row").css("background-color", "#77dd77");
 } else if (currentTime >= "11" || currentTime <= "11:59:59") {
     $("#1100-row").css("background-color", "#ff6961");
-} else if (currentTime < "11") {
-    $("#1100-row").css("background-color", "#77dd77");
 }
 
 if (currentTime > "12:59:59") {
