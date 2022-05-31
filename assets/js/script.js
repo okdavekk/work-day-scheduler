@@ -13,7 +13,7 @@ if (currentTime > "09:59:59") {
     $("#0900-row").css("background-color", "#d3d3d3");
     //green
 } else if (currentTime < "09") {
-    $(".rows").css("background-color", "#77dd77");
+    $("#0900-row").css("background-color", "#77dd77");
     //red
 } else if (currentTime >= "09" || currentTime <= "09:59:59") {
     $("#0900-row").css("background-color", "#ff6961");
