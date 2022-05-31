@@ -2,12 +2,9 @@
 var currentDayEl = $("currentDay")
 var currentDate = moment().format("DD MMMM YYYY HH:mm:ss")
 var currentTime = moment().format("HH:mm:ss")
-console.log(currentTime);
 
-
-//Current day display write to HTML
+//Current day & time display write to HTML
 $("#currentDay").html(currentDate);
-
 
 //Row color change... Goes to grey when its past, green in the future and red in the present.
 //d3 = grey, 77 = green, 61 = red, 
